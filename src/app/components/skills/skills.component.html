@@ -1,0 +1,12 @@
+<div *ngIf="showPreview()">
+  <mat-card *ngFor="let skill of skills" class="m-2">
+    {{skill.name}}
+    <mat-progress-bar mode="determinate" color="primary" [value]="skill.value" ></mat-progress-bar>
+  </mat-card>
+</div>
+<div *ngIf="!showPreview()">
+  <div class="w-100 d-inline" *ngFor="let skill of skills; index as i;">
+    <div class="w-10 dark-theme text-dark"> {{i}} </div>
+    <div class="w-90 "> </div>
+  </div>
+</div>

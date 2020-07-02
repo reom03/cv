@@ -1,0 +1,23 @@
+<div class="h-100">
+<div class="dark-split pt-1 pb-1 shadow-lg">
+  Terminal:
+  <span>Local <i class="fas fa-times ml-2"></i>
+  </span>
+</div>
+<div class="shell shadow-sm" (click)="setFocus()">
+  <div id="cmdIn">
+    <span id = "prompt" [innerHTML]="getInnerHTML()"></span>
+    <input type="text" class="input" id="inputCmd" autofocus #inputSh
+           autocomplete='off' maxlength = 85
+           [(ngModel)]="input"
+           (keyup)="key($event)">
+  </div>
+</div>
+<div  class="dark-theme">
+  <div class="dark-files col-2 shadow-lg">
+    <div class="badge bg-pink mr-2 mt-1 mb-1">
+      <i class="fas fa-terminal"></i>
+    </div>Terminal
+  </div>
+</div>
+</div>
