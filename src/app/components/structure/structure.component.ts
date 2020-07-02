@@ -15,6 +15,7 @@ export class StructureComponent implements OnInit {
       name: 'Raul Ortiz',
       expandable: true,
       className: '',
+      isExpanded: true,
       level: 0,
     },
     {
@@ -41,7 +42,7 @@ export class StructureComponent implements OnInit {
     }, {
       name: 'Skills',
       expandable: false,
-      className: 'fas fa-dev color-pink',
+      className: 'fas fa-code color-pink',
       level: 1
     }, {
       name: 'Languages',

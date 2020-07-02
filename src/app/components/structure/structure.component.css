@@ -1,6 +1,9 @@
 .tree-node {
   display: flex;
   align-items: center;
-  width: 90%;
 }
 
+
+.tree-node:hover{
+  background-color: #2B2B2B;
+}
