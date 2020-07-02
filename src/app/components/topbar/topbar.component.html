@@ -4,11 +4,11 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-toolbar color="">
-  <a mat-stroked-button class="" href="assets/files/Raul_Ortiz_-_Senior_Java_Developer.pdf" target="_blank">
+  <a mat-stroked-button class="mr-2" href="assets/files/Raul_Ortiz_-_Senior_Java_Developer.pdf" target="_blank">
     <i class="fas fa-download"></i>
     Download
   </a>
-  <button mat-stroked-button class="shadow-sm border-dark" [matMenuTriggerFor]="menu">
+  <button mat-stroked-button class="mr-2" [matMenuTriggerFor]="menu">
     <i class="fas fa-hashtag"></i>
     Social
   </button>
@@ -21,7 +21,7 @@
     <a mat-menu-item class="stretched-link" href="https://www.facebook.com/reom03" target="_blank"><i class="fab fa-facebook mr-2"></i>Facebook</a>
     <a mat-menu-item class="stretched-link" href="https://www.instagram.com/reom03/"><i class="fab fa-instagram mr-2"></i>Instagram</a>
   </mat-menu>
-  <button mat-stroked-button (click)="openSnackBar()">
+  <button mat-stroked-button (click)="openSnackBar()" class="mr-2">
     <i class="fas fa-info"></i>
     About
   </button>
