@@ -40,7 +40,7 @@ export class ShellComponent implements OnInit {
     }
   }
   private enter(): void{
-    const command = this.input;
+    const command = this.input.trim();
     if (command) {
       this.history.push(command);
       this.historyIndex = this.history.length;
@@ -51,6 +51,12 @@ export class ShellComponent implements OnInit {
         this.addLine(this.shellService.getSkills(), true);
       }else if ( command === 'jobs') {
         this.addLine(this.shellService.getJobs(), true);
+      }else if ( command === 'pwd') {
+        let route = '/you/are/here/';
+        if (this.folder !== '~'){
+          route += this.folder + '/';
+        }
+        this.addLine(route, true);
       }else if ( command === 'langs') {
         this.addLine(this.shellService.getLanguages(), true);
       }else if ( command === 'ls'){
