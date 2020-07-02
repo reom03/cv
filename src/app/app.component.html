@@ -1,42 +1,39 @@
-<div class="container-fluid vh-100 p-0 no-gutters ">
+<div class="container-fluid vh-100 p-0 no-gutters">
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span>Raul Ortiz</span>
-      <span class="example-spacer"></span>
     </mat-toolbar-row>
   </mat-toolbar>
   <mat-toolbar color="">
-    <button mat-button class="shadow-sm border-dark">
+    <a mat-button class="shadow-sm border-dark" href="assets/files/Raul_Ortiz_-_Senior_Java_Developer.pdf" target="_blank">
       <i class="fas fa-download"></i>
       Download
-    </button>
+    </a>
     <button mat-button class="shadow-sm border-dark" [matMenuTriggerFor]="menu">
       <i class="fas fa-hashtag"></i>
       Social
     </button>
     <mat-menu #menu="matMenu">
       <a mat-menu-item class="stretched-link" href="https://www.linkedin.com/in/reom03/?locale=en_US" target="_blank"><i class="fab fa-linkedin mr-2"></i>LinkedIh</a>
-      <a mat-menu-item class="stretched-link" href="#"><i class="fab fa-github mr-2"></i>Github</a>
+      <a mat-menu-item class="stretched-link" href="https://github.com/reom03" target="_blank"><i class="fab fa-github mr-2"></i>Github</a>
       <a mat-menu-item href="mailto:reom03@gmail.com"><i class="fas fa-envelope mr-2"></i>Email</a>
     </mat-menu>
   </mat-toolbar>
 
-  <div class="vertical-text h-60 float-left shadow-sm border-dark border-right" >
+  <div class="vertical-text h-60 float-left shadow-sm border-dark border-right dark-theme" >
     <span class="ml-1 mr-1">1: Project</span>
   </div>
   <div class="w-100 h-60" >
-    <div class="row no-gutters h-100">
-      <div class="col-md-4 h-100">
+    <div class="row no-gutters h-100 dark-theme">
+      <div class="col-md-3 h-100">
         <app-structure class="w-100 h-100"></app-structure>
       </div>
-      <div class="col-md-8 dark-files shadow-sm h-100">
+      <div class="col-md-9 dark-files shadow-sm h-100">
         <app-files class="w-100 h-100 overflow-auto"></app-files>
       </div>
     </div>
   </div>
-  <div class="row h-25 no-gutters">
+  <div class="row h-25 no-gutters dark-theme">
     <app-shell class="col-md-12 h-100"></app-shell>
   </div>
 </div>
-
-
