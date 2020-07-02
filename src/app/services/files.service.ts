@@ -20,8 +20,14 @@ export class FilesService {
       {name: 'Grails', value: 100},
       {name: 'Groovy', value: 100},
       {name: 'Angular 8+', value: 80},
+      {name: 'Agile and Scrum', value: 80},
       {name: 'Bootstrap', value: 70},
-      {name: 'Management', value: 60}
+      {name: 'RestFull API', value: 70},
+      {name: 'Agile and Scrum', value: 80},
+      {name: 'Management', value: 60},
+      {name: 'PostgreSQL', value: 60},
+      {name: 'Oracle', value: 60},
+      {name: 'Android App Development', value: 40}
       ];
   }
   getLanguage(): Language[] {
