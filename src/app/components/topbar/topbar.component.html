@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Raul Ortiz Machado - Java Developer</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-toolbar color="">
+  <a mat-stroked-button class="" href="assets/files/Raul_Ortiz_-_Senior_Java_Developer.pdf" target="_blank">
+    <i class="fas fa-download"></i>
+    Download
+  </a>
+  <button mat-stroked-button class="shadow-sm border-dark" [matMenuTriggerFor]="menu">
+    <i class="fas fa-hashtag"></i>
+    Social
+  </button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item class="stretched-link" href="https://www.linkedin.com/in/reom03/?locale=en_US" target="_blank"><i class="fab fa-linkedin mr-2"></i>LinkedIh</a>
+    <a mat-menu-item class="stretched-link" href="https://github.com/reom03" target="_blank"><i class="fab fa-github mr-2"></i>Github</a>
+    <a mat-menu-item class="stretched-link" href="mailto:reom03@gmail.com"><i class="fas fa-envelope mr-2"></i>Email</a>
+    <mat-divider></mat-divider>
+    <a mat-menu-item class="stretched-link" href="https://www.linkedin.com/in/reom03/?locale=en_US" target="_blank"><i class="fab fa-twitter mr-2"></i>Twiter</a>
+    <a mat-menu-item class="stretched-link" href="https://github.com/reom03" target="_blank"><i class="fab fa-facebook mr-2"></i>Facebook</a>
+    <a mat-menu-item class="stretched-link" href="mailto:reom03@gmail.com"><i class="fab fa-instagram mr-2"></i>Instagram</a>
+  </mat-menu>
+  <button mat-stroked-button (click)="openSnackBar()">
+    <i class="fas fa-info"></i>
+    About
+  </button>
+</mat-toolbar>

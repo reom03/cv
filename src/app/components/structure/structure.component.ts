@@ -35,11 +35,6 @@ export class StructureComponent implements OnInit {
       level: 1,
       className: 'fas fa-id-card-alt color-red',
     }, {
-      name: 'Certifications',
-      expandable: false,
-      level: 1,
-      className: 'fas fa-award color-blue',
-    }, {
       name: 'Skills',
       expandable: false,
       className: 'fas fa-code color-pink',

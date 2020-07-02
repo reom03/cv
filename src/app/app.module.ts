@@ -22,6 +22,9 @@ import { CoverComponent } from './components/cover/cover.component';
 import { EducationComponent } from './components/education/education.component';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatListModule} from '@angular/material/list';
+import {AboutDialogComponent, TopbarComponent} from './components/topbar/topbar.component';
+import {MatDialog, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import {MatMenuModule} from '@angular/material/menu';
     CertificationsComponent,
     ExperienceComponent,
     CoverComponent,
-    EducationComponent
+    EducationComponent,
+    TopbarComponent,
+    AboutDialogComponent
   ],
     imports: [
         BrowserModule,
@@ -48,9 +53,14 @@ import {MatMenuModule} from '@angular/material/menu';
         MatProgressBarModule,
         MatExpansionModule,
         MatChipsModule,
-        MatMenuModule
+        MatMenuModule,
+        MatListModule,
+        MatDialogModule
     ],
   providers: [],
+  entryComponents: [
+    AboutDialogComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
