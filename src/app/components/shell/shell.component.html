@@ -4,7 +4,7 @@
   <span>Local <i class="fas fa-times ml-2"></i>
   </span>
 </div>
-<div class="shell shadow-sm" (click)="setFocus()">
+<div class="shell shadow-sm" (click)="setFocus()" id="shell">
   <div id="cmdIn">
     <span id = "prompt" [innerHTML]="getInnerHTML()"></span>
     <input type="text" class="input" id="inputCmd" autofocus #inputSh
