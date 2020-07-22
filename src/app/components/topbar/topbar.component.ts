@@ -48,13 +48,19 @@ export class TopbarComponent implements OnInit {
           position: 'right'
         }
       ],
-      showProgress: true
+      showProgress: true,
     });
 
   }
 
   ngOnInit(): void {
-    this.introJS.start();
+
+    if (!localStorage.getItem('dismiss')) {
+      this.introJS.start();
+    }
+    this.introJS.onexit(() => {
+      localStorage.setItem('dismiss', 'true');
+    });
   }
 
   openSnackBar(): void {
