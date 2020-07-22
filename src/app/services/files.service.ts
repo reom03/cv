@@ -54,12 +54,35 @@ export class FilesService {
         }
       },
       {
+        title: 'Senior Developer',
+        description: 'Design and development of a platform for planning, management and monitoring of searches in penitentiary facilities for Gendarmeria de Chile, using Grails 2.2.1 and ExtJS 3.4, with DB Oracle',
+        startDate: '08/2017', endDate: '11/2017 (Temporary Contract)', logo: 'kibernumTrans.png',
+        experience: ['ExtJs 3.4', 'Grails', 'Groovy', 'ApiRest'],
+        company: 'Kibernum',
+        boss: 'Cristian Rosales',
+        url: 'https://www.kibernum.com/',
+        info: {projects: [
+            {name: 'Searches', url: 'https://www.gendarmeria.gob.cl/'}
+          ]
+        }
+      },
+      {
+        title: 'Senior Developer',
+        description: 'Maintenance of Java applications for clients in banking area such as BBVA and Banco Falabela. In BBVA implementation of SoftToken in online banking for people (BBVA Pass). In Banco Falabella, modification of the Commercial Platform App, which is used by executives.',
+        startDate: '01/2017', endDate: '07/2017 (Temporary Contract)', logo: 'iconexaTrans.png',
+        experience: ['ExtJs 3.4', 'Grails', 'Groovy', 'ApiRest'],
+        company: 'Kibernum',
+        boss: 'Marcos Aguilar',
+        url: 'https://www.facebook.com/iconexa',
+        info: {}
+      },
+      {
         title: 'Technical Leader > IT Manager',
         description: '<strong>IT Manager</strong><br>  Manage a team of 5 people, with developers, testers and aws architects, interaction with the business area to define requirements <br>' +
           '<strong>Technical Leader</strong><br>Design and development of B2B application for integration between Retailers and Brands, developed in Grails, with DB Postgres and deployed in AWS.',
-        startDate: '10/2015', endDate: '12/2019', logo: 'fromozz.png',
+        startDate: '10/2015', endDate: '12/2019 (Freelance between: 01/2017 - 12/2017)', logo: 'fromozz.png',
         company: 'Fromozz Group',
-        experience: ['Groovy / Grails 2.3.11', 'Git', 'jenkins', 'Asana'],
+        experience: ['Groovy / Grails 2.3.11', 'Git', 'jenkins', 'Asana', 'Angular 8+', 'Jira', 'CI/CD Bitbucket Pipelines', 'PostgreSQL'],
         url: 'http://www.fromozz.com/',
         boss: 'Carlos Nieto',
         info: {projects: [

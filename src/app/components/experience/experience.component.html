@@ -25,8 +25,8 @@
                   <a *ngIf="job.url" href="{{job.url}}" target="_blank">{{job.company}}</a>
                   <span *ngIf="!job.url">{{job.company}}</span>
                 </h2>
-                Dates:
-                {{job.startDate}} / {{job.endDate}}
+                <p>Dates:{{job.startDate}} - {{job.endDate}}</p>
+                <p *ngIf="job.boss">Reports To:{{job.boss}}</p>
               </div>
             </div>
 
