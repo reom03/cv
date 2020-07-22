@@ -50,6 +50,7 @@ export class TopbarComponent implements OnInit {
       ],
       showProgress: true
     });
+
   }
 
   ngOnInit(): void {
