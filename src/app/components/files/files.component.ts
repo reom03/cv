@@ -24,6 +24,8 @@ export class FilesComponent implements OnInit {
     this.openedFiles.splice(index, 1);
     if (this.openedFiles.length === 0){
       this.current = null;
+    }else{
+      this.current = this.openedFiles[(this.openedFiles.length - 1)];
     }
   }
 
