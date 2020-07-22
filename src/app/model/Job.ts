@@ -7,5 +7,6 @@ export class Job {
   logo: string;
   info: any;
   url?: string;
+  boss?: string;
   experience?: string[];
 }

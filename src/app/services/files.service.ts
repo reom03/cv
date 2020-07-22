@@ -46,6 +46,7 @@ export class FilesService {
         startDate: '01/2010', endDate: '07/2011', logo: 'def4u.png',
         experience: ['Angular 8+', 'Grails', 'Groovy', 'ApiRest', 'Jira', 'Bitbucket'],
         company: 'Def Systems',
+        url: 'https://www.de4u.com',
         info: {projects: [
             {name: 'ODR Cam', url: 'https://testing.odr-cam.com/'},
             {name: 'ODR Cam B2C', url: 'https://user-b2c.odr-cam.com/'}
@@ -60,6 +61,7 @@ export class FilesService {
         company: 'Fromozz Group',
         experience: ['Groovy / Grails 2.3.11', 'Git', 'jenkins', 'Asana'],
         url: 'http://www.fromozz.com/',
+        boss: 'Carlos Nieto',
         info: {projects: [
             {name: 'EcuadorB2B', url: 'https://www.ecuadorb2b.com/'},
             {name: 'ChileB2B', url: 'https://www.chileb2b.cl/'},
@@ -71,18 +73,20 @@ export class FilesService {
         title: 'Consultant',
         description: 'Maintenance and development of Web Applications in Hibu. using technologies such as Spring, Mybatis, Hiberante, Tomcat, DB: MySQL, Oracle',
         startDate: '10/2014', endDate: '09/2015', logo: 'vass.png',
-        experience: ['Spring', 'Mybatis', 'Hiberante', 'Tomcat', 'MySQL',' Oracle'],
+        experience: ['Spring', 'Mybatis', 'Hiberante', 'Tomcat', 'MySQL','Oracle'],
         company: 'Vass Latam',
         url: 'http://www.vasslatam.cl/',
+        boss: 'Alberto Ibañez',
         info: {}
       },
       { title: 'IT Specialist',
         description: 'Analysis, Development and maintenance of applications related to Online Banking.\n' +
           'Leader of the Venecredit Office Banking Project, which is the\n' +
           'Online banking for companies.',
-          experience: ['Java 6', 'Struts 2', 'Spring', 'Jax WS', 'DB Informix', 'DB Oracle 11G', 'PL / SQL Hibernate 3', 'JPA', 'Jquery', 'Bootstrap', ' JavaScript', ' Project management'],
+          experience: ['Java 6', 'Struts 2', 'Spring', 'Jax WS', 'DB Informix', 'DB Oracle 11G', 'PL / SQL', 'Hibernate 3', 'JPA', 'Jquery', 'Bootstrap', ' JavaScript', ' Project management'],
         startDate: '08/2011', endDate: '09/2014', logo: 'bvc.png',
         company: 'Banco Venezolano de Credito',
+        boss: 'Saul Ordoñez',
         url: 'http://www.venezolano.com/',
         info: {projects: [{name: 'VOB', url: 'https://vob.venezolano.com/'}]}
       },
@@ -107,6 +111,7 @@ export class FilesService {
         startDate: '07/2010', endDate: '07/2011', logo: 'teravision.png',
         company: 'Teravision Technologies',
         url: 'https://www.teravisiontech.com',
+        boss: 'Jazmin Hernandez',
         info: {projects: [{name: 'SOMA', url: 'https://www.teravisiontech.com/portfolio/soma/'}]}
       },
       {
@@ -116,6 +121,7 @@ export class FilesService {
           'J2EE', 'JSP', 'JSTL', 'STRUTS', 'ORACLE PL-SQL', 'Oracle JDBC', 'IText', 'Ajax', 'Axis Web Services', 'Jboss, Aplication server',
           'Eclipse IDE', 'JDeveloper', 'CVS'
         ],
+        boss: 'Sandra Mendoza',
         startDate: '01/2010', endDate: '07/2011', logo: 'y&v.png',
         company: 'Y&V Consulting',
         info: {}
@@ -133,6 +139,7 @@ export class FilesService {
         description: 'Develop an administrative software for the management of buildings, built in Java and mysql database.',
         startDate: '03/2006', endDate: '01/2007', logo: 'danoral.png',
         company: 'Administradora Danoral',
+        url: 'https://danoral.com/',
         info: {}
       }
     ];
