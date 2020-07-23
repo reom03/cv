@@ -70,8 +70,8 @@ export class FilesService {
         title: 'Senior Developer',
         description: 'Maintenance of Java applications for clients in banking area such as BBVA and Banco Falabela. In BBVA implementation of SoftToken in online banking for people (BBVA Pass). In Banco Falabella, modification of the Commercial Platform App, which is used by executives.',
         startDate: '01/2017', endDate: '07/2017 (Temporary Contract)', logo: 'iconexaTrans.png',
-        experience: ['ExtJs 3.4', 'Grails', 'Groovy', 'ApiRest'],
-        company: 'Kibernum',
+        experience: ['J2EE', 'GWT', 'Oracle', 'Shell-Script'],
+        company: 'Iconexa',
         boss: 'Marcos Aguilar',
         url: 'https://www.facebook.com/iconexa',
         info: {}
