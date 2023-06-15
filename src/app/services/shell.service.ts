@@ -15,7 +15,9 @@ export class ShellService {
     help += '&nbsp;&nbsp;help: List the bash commands<br>';
     help += '&nbsp;&nbsp;skills: List my skills with a dominance rate from 1 to 10<br>';
     help += '&nbsp;&nbsp;jobs: List all my professional life<br>';
-    help += '&nbsp;&nbsp;languages: List my languages (not the programming ones BTW)<br>';
+    help += '&nbsp;&nbsp;langs: List my languages (not the programming ones BTW)<br>';
+    help += '&nbsp;&nbsp;mkdir: Create a directory, in memory of course<br>';
+    help += '&nbsp;&nbsp;cd: Move into a directory, just for fun, it doesn\'t actually makes any diference.<br>';
     return help;
   }
   getSkills(): string{

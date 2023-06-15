@@ -1,11 +1,11 @@
 <div class="row m-0 dark-theme shadow-sm">
   <div class="col-md-12 ">
     <div class="row shadow-sm" id="tabs"  >
-      <div *ngFor="let tab of openedFiles; index as i" class="col-md-2 pt-2 pointer border-right border-dark shadow-sm" [ngClass]="{'dark-files': tab === current}"
+      <div *ngFor="let tab of openedFiles; index as i" class="col-md-2 pt-2 pointer border-right border-dark shadow-sm" [ngClass]="{'dark-files': tab !== current, 'text-white': tab === current}"
       (click)="selectTab(tab)">
         <i class="color-red fab fa-html5"></i>
         {{tab}}
-        <button class="btn btn-sm text-white float-right mr-0 pr-0 pt-0 mt-0" (click)="closeTab(i)" >
+        <button class="btn btn-sm  float-right mr-0 pr-0 pt-0 mt-0" (click)="closeTab(i)" >
           <i class="fas fa-times"></i>
         </button>
       </div>

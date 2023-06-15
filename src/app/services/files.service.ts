@@ -39,11 +39,27 @@ export class FilesService {
   getJobs(): Job[] {
     return [
       {
+        title: 'Technical Lead',
+        description: 'TL in a Scrum Cell in charge of the development of a new module \n' +
+        'which will add integration with the Mach payment ecosystem, to \n' +
+        'achieve features such as Pays between phone contacts, P2M\n' +
+        'payments through QR, currently with 80k active users and over 10.000 transactions a month',
+        startDate: '11/2021', endDate: 'Present', logo: 'bci.png',
+        experience: [ 'Team Leading', 'Kotlin', 'Java', 'Microservices', 'Jenkins', 'Jira', 'Bitbucket'],
+        company: 'Bci',
+        url: 'https://www.bci.cl',
+        info: {
+          projects: [
+            {name: 'App Bci', url: 'https://play.google.com/store/apps/details?id=cl.bci.app.personas&hl=es_CL&gl=US&pli=1'} 
+          ]
+        }
+      },
+      {
         title: 'Co-founder',
         description: 'Our company is in charge of the design and the development of Web applications requested by the\n' +
           'clients, currently developing an Online Dispute Resolutions System for the Chambers of Commerce\n' +
           'of Santiago.',
-        startDate: '01/2010', endDate: '07/2011', logo: 'def4u.png',
+        startDate: '01/2010', endDate: '10/2021', logo: 'def4u.png',
         experience: ['Angular 8+', 'Grails', 'Groovy', 'ApiRest', 'Jira', 'Bitbucket'],
         company: 'Def Systems',
         url: 'https://www.de4u.com',
