@@ -31,7 +31,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: ng build --configuration=prod
+        run: ng build
 
       - name: Delete Bucket files
         uses: chadxz/s3-delete-objects-action@v0.1.0
