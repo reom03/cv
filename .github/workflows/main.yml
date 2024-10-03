@@ -1,0 +1,54 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 22
+
+      - name: Install angular Cli
+        run: npm install -g @angular/cli
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: ng build --configuration=prod
+
+      - name: Delete Bucket files
+        uses: chadxz/s3-delete-objects-action@v0.1.0
+        with:
+          bucket: 'cv-reom'
+          prefix: ''
+          allowEmptyPrefix: true
+
+      - name: Deploy
+        if: success()
+        run: aws s3 sync ./dist/cv-new/browser s3://cv-reom
+
+      - name: Invalidate CloudFront
+        uses: chetan/invalidate-cloudfront-action@v2
+        env:
+          DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
+          PATHS: "/index.html"
+          AWS_REGION: "us-east-1"
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
