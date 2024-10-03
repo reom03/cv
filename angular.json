@@ -27,14 +27,20 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/intro.js/introjs.css",
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "public/fontawesome-6.6.0/css/all.css",
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "public/fontawesome-6.6.0/js/all.js",
+              "node_modules/intro.js/intro.js",
+              "public/scripts/profile.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,6 +96,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/magenta-violet.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -97,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f288ee50-82fe-4b0c-afe0-9ed8ef01e841"
   }
 }

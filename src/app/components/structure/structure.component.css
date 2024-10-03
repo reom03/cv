@@ -1,0 +1,9 @@
+.tree-node {
+  display: flex;
+  align-items: center;
+}
+
+
+.tree-node:hover{
+  background-color: #2B2B2B;
+}

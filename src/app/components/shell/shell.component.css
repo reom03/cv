@@ -1,0 +1,28 @@
+
+.shell {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: #202020;
+  font-size: 11px;
+  font-family: Courier;
+  color: #DFDFDF;
+  min-height: 70% !important;
+  max-height: 70% !important;
+  overflow: auto;
+}
+
+.input {
+  background: #202020;
+  border: 0px;
+  font-size: 11px;
+  font-family: Courier;
+  color: #DFDFDF;
+  outline: none;
+  width: 600px;
+  left: auto;
+  right: 10px;
+}
+.bg-pink{
+  background-color: hotpink;
+}

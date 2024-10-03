@@ -1,0 +1,23 @@
+<div class="row m-0 dark-theme shadow-sm">
+  <div class="col-md-12 ">
+    <div class="row shadow-sm" id="tabs"  >
+      <div *ngFor="let tab of openedFiles; index as i" class="col-md-2 pt-2 pointer border-end border-dark shadow-sm dark-files" [ngClass]="{'selected-tab': tab === current}"
+      (click)="selectTab(tab)">
+        <i class="{{getIconClass()}}"></i>
+        {{tab}}
+        <button class="btn btn-sm  float-end me-0 pe-0 pt-0 mt-0 text-white" (click)="closeTab(i)" >
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="w-100" style="max-height: 90%; overflow-y: auto">
+    <app-skills *ngIf="current === 'Skills'"></app-skills>
+    <app-languages *ngIf="current === 'Languages'"></app-languages>
+    <app-certifications *ngIf="current === 'Certifications'"></app-certifications>
+    <app-experience *ngIf="current === 'Work Experience'"></app-experience>
+    <app-education *ngIf="current === 'Education'"></app-education>
+    <app-cover *ngIf="current === 'About me'"></app-cover>
+</div>

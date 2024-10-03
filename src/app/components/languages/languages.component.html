@@ -1,0 +1,10 @@
+<mat-card *ngFor="let lang of languages" class="m-2">
+  <h3>{{lang.name}}</h3>
+  Read
+  <mat-progress-bar mode="determinate" color="primary" [value]="lang.read" ></mat-progress-bar>
+  Write
+  <mat-progress-bar mode="determinate" color="primary" [value]="lang.write" ></mat-progress-bar>
+  Speak
+  <mat-progress-bar mode="determinate" color="primary" [value]="lang.speak" ></mat-progress-bar>
+</mat-card>
+

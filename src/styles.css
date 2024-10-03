@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,body
+{
+  height:100%;
+}
+
+
+.dark-theme{
+  background-color: rgb(75, 73, 73) !important;
+  color: #ffffff;
+}
+.dark-files{
+  background-color: rgb(43, 43, 43);
+  color: grey !important;
+
+}
+.dark-split{
+  background-color: #5c6b81;
+  color: #ffffff;
+}
+
+.shell-wrapper{
+  min-height: 25% !important;
+  max-height: 25% !important;
+  overflow: auto;
+}
+
+.color-red{
+  color: crimson;
+}
+.color-blue{
+  color: darkblue;
+}
+.color-lightBlue{
+  color: aqua;
+}
+.color-pink{
+  color: darkmagenta;
+}
+.color-yellow{
+  color: darkkhaki;
+}
+.pointer{
+  cursor: pointer;
+}
+.vertical-text {
+  writing-mode: vertical-lr;
+
+}
+
+.vertical-text span {
+  text-orientation: sideways;
+}
+.w-90{
+  width: 90% !important;
+}
+.mh-75{
+  max-height: 75% !important;
+  min-height: 75% !important;
+  height: 75%;
+}
+.h-60{
+  height: 60% !important;
+
+}
+.w-10{
+  width: 10% !important;
+}
+.mat-progress-bar-buffer{
+  background-color: white !important;
+}
+a:link {
+  color: #959fad;
+}
+
+/* mouse over link */
+a:hover {
+  color: #5c6b81;
+}
+
+.selected-tab{
+  border-bottom: 3px solid #2d5389 !important;
+}
+.logo {
+  height: var(--mat-toolbar-standard-height);;
+}
